@@ -7,7 +7,7 @@ const DIR = {
 }
 const parseWire = w => w.split(',').map(s => [s[0], parseInt(s.slice(1))]);
 const read = () => {
-  const file = fs.readFileSync('day3.1.in').toString()
+  const file = fs.readFileSync('day3.txt').toString()
   const [w1,w2] = file.split('\n')
   return [parseWire(w1), parseWire(w2)]
 }
