@@ -24,7 +24,6 @@ function set(x, y, flag, step) {
   p[flag] = step
   if (p.a > 0 && p.b > 0) {
     const dist = p.a + p.b
-    console.log({x, y, dist})
     closestDist = Math.min(closestDist, dist)
   }
 }
