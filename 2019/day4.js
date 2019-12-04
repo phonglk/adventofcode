@@ -9,7 +9,7 @@ class Num {
     for(let i = 5; i >= 0; i--) {
       const pow = Math.pow(10, i)
       const dValue = ~~(rem / pow)
-      rem -= dValue*pow
+      rem %= pow
       this.digits[this.length - 1 - i] = dValue
     }
   }
